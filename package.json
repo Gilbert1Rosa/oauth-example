@@ -4,13 +4,13 @@
   "description": "OAuth example project",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Gilbert Rosa",
   "license": "ISC",
   "dependencies": {
     "express": "^4.10.6",
-    "mysql": "^2.5.4",
     "node-oauth2-server": "^2.4.0"
   }
 }

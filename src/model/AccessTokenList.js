@@ -8,8 +8,7 @@ module.exports.findAccessToken = (token) => {
     var accessToken = accessTokens.find((actualToken) => {
         return  actualToken.bearer === token;
     });
-    console.log("findAccessToken reached");
-    return accessToken.userid;
+    return accessToken !== null && accessToken !== undefined? accessToken.userid : undefined;
 }
 
 module.exports.saveAccessToken = (userid, bearer) => {
